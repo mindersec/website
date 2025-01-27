@@ -1,0 +1,12 @@
+# Generated files
+dist/
+
+# Nodejs modules
+node_modules/
+
+# Editor folders
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
