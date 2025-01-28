@@ -1,6 +1,6 @@
 # Minder website
 
-This repo contains the Minder public website, hosted at <https://minder.dev>. It
+This repo contains the Minder public website, hosted at <https://mindersec.dev>. It
 is a static HTML site hosted by GitHub pages.
 
 The theme is built using:
