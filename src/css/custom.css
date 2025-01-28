@@ -1,0 +1,68 @@
+/*
+  SPDX-FileCopyrightText: Copyright 2025 The Minder Authors
+  SPDX-License-Identifier: Apache-2.0
+*/
+
+body {
+    @apply antialiased lg:text-lg text-text;
+}
+
+.container {
+    @apply w-full mx-auto px-6 lg:px-10 max-w-7xl;
+}
+
+.container-small {
+    @apply w-full mx-auto px-6 lg:px-10 max-w-2xl;
+}
+
+h1 {
+    @apply text-pretty text-5xl lg:text-7xl font-bold mb-4 lg:mb-8;
+}
+
+h2 {
+    @apply text-pretty text-4xl lg:text-6xl font-bold mb-6;
+}
+
+h3 {
+    @apply text-pretty text-2xl lg:text-3xl font-bold mb-5;
+}
+
+p {
+    @apply mb-4 lg:mb-7 leading-6;
+}
+
+.btn {
+    @apply flex items-center mx-auto justify-center max-w-xs space-x-2.5 bg-gray-100 hover:bg-gray-200 transition-all rounded px-[1.125rem] py-3.5 text-base font-semibold;
+}
+
+.btn.btn--light {
+    @apply bg-white hover:bg-gray-50 border border-[#CBD5E1];
+}
+
+.btn-arrow {
+    @apply flex items-center space-x-2.5 transition-all text-purple-700 hover:text-purple-800 text-[0.938rem] font-semibold;
+}
+
+.faqs > div {
+    @apply border-b border-[#E2E8F0] pt-6 pb-4 text-base text-[#334155];
+}
+
+.faqs p:last-child {
+    @apply mb-0;
+}
+
+.faqs button {
+    @apply relative w-full py-4 pr-10 bg-transparent text-left text-text text-xl font-semibold;
+}
+
+.faqs button svg {
+    @apply absolute transition-all top-1/2 right-0 -translate-y-1/2;
+}
+
+.faqs button[aria-expanded=true] svg {
+    @apply -rotate-180 -translate-y-1/2;
+}
+
+.faqs a {
+    @apply underline hover:no-underline underline-offset-2 decoration-1;
+}

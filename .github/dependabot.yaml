@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: Copyright 2025 The Minder Authors
+# SPDX-License-Identifier: Apache-2.0
+
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    groups:
+      dev-deps:
+        dependency-type: 'development'
+      prod-deps:
+        dependency-type: 'production'
+    ignore:
+      - dependency-name: "tailwindcss"
+        # Not ready for Tailwind v4 upgrade
+        update-types: ["version-update:semver-major"]
